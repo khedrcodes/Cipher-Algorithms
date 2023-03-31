@@ -87,8 +87,7 @@ class PlayfairCipher:
                     return i, j
 
 
-key = "monarchy"
-cipher = PlayfairCipher(key)
+cipher = PlayfairCipher("monarchy")
 plaintext = "mohammed mahmoud khedr"
 ciphertext = cipher.encrypt(plaintext)
 print("ciphertext = ", ciphertext)

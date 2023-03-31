@@ -60,11 +60,9 @@ class HillCipher:
         return t
 
 
-key = np.array([[2, 1], [3, 4]])
-cipher = HillCipher(key)
+cipher = HillCipher(np.array([[2, 1], [3, 4]]))
 plaintext = "mohammed mahmoud khedr"
-print("Plaintext:", plaintext)
 ciphertext = cipher.encrypt(plaintext)
 print("Ciphertext:", ciphertext)
 decrypted_plaintext = cipher.decrypt(ciphertext)
-print("Decrypted plaintext:", decrypted_plaintext)
+print("plaintext:", decrypted_plaintext)

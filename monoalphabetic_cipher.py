@@ -9,7 +9,6 @@ class MonoalphabeticCipher:
             if not char in new_key:
                 new_key += char
         self.key = new_key
-        print(self.key + "khedr")
 
     def encrypt(self, plaintext):
         ciphertext = ""
